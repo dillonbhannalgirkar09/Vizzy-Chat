@@ -1,9 +1,28 @@
+# Web Framework
 fastapi==0.115.0
 uvicorn[standard]==0.30.0
+starlette==0.38.6
+
+# Data Validation (use versions with pre-built wheels)
+pydantic==2.7.1
+pydantic-core==2.18.3
+
+# Environment
 python-dotenv==1.0.1
+
+# AI & APIs
 google-generativeai==0.8.3
-pydantic==2.11.2
+
+# Form Handling
 python-multipart==0.0.20
-pillow==11.0.0
+
+# Image Processing (pre-built wheel)
+Pillow==10.1.0
+
+# HTTP
 requests==2.32.5
-httpx==0.27.0
+httpx==0.26.0
+
+# Utilities
+typing-extensions==4.10.0
+annotated-types==0.7.0
