@@ -1,15 +1,17 @@
 import axios from 'axios'
 
-const API_BASE_URL = '/api'
+// Hardcode the API URL (temporary fix)
+const API_BASE_URL = 'https://vizzy-chat-api.onrender.com/api'
+
+console.log('🌐 Using API URL:', API_BASE_URL)
 
 const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
     'Content-Type': 'application/json'
   },
-  timeout: 300000  // 5 minutes timeout
+  timeout: 300000
 })
-
 // Add response interceptor for better error handling
 api.interceptors.response.use(
   response => {
